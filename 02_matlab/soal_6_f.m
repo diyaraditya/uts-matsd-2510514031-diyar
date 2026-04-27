@@ -5,7 +5,7 @@
 % Nama : Muhammad Diyar razaqa Aditya
 % NIM  : 2510514031
 % Parameter: N=31, a=3, b=1, K=5, theta0=95, alpha=0.002
-% Tanggal: 2026-04-26
+% Tanggal: 2026-04-27
 % =======================================================================
 clc; clear; close all;
 
