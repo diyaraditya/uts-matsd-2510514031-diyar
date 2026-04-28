@@ -7,5 +7,20 @@
 % Parameter: N=31, a=3, b=1, K=5, theta0=95, alpha=0.002
 % Tanggal: 2026-04-28
 % =======================================================================
-trend12 = polyval(p,n);
-MAE = mean(abs(S - trend12))
+clc; clear;
+
+% Data
+n = 1:12;
+S = 50 + 5*n + ((-1).^n)*4;
+
+% Regresi linear (harus ada ini dulu!)
+p = polyfit(n, S, 1);
+
+% Hitung nilai trend
+trend = polyval(p, n);
+
+% Hitung MAE
+MAE = mean(abs(S - trend))
+
+% (opsional) lihat residual
+residual = S - trend
